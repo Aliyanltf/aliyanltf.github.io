@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIYAN LATIF</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Main Section Styles */
+        .main-content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .main-content p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #555;
+        }
+
+        /* Button Style */
+        .button {
+            display: inline-block;
+            background-color: #2575fc;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #6a11cb;
+            transform: translateY(-5px);
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: #fff;
+            padding: 40px 20px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .main-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+            }
+
+            .section {
+                padding: 30px 20px;
+            }
+        }
+
+        /* Animation for Elements */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Welcome to ALIYAN LATIF's Website</h1>
+        <p class="fade-in">A place to share knowledge, projects, and ideas.</p>
+    </header>
+
+    <div class="main-content fade-in">
+        <h2>Hello, I'm Aliyan Latif!</h2>
+        <p>I'm a passionate developer with a love for creating useful and innovative solutions. I specialize in web development, programming, and problem-solving. This website is a hub for my projects, ideas, and technical journey.</p>
+        <a href="#about" class="button">Learn More</a>
+    </div>
+
+    <section id="about" class="section fade-in">
+        <h3>About Me</h3>
+        <p>I'm always learning and evolving in the tech world. My main focus areas are front-end development and UI/UX design. I believe in writing clean, maintainable code and delivering exceptional user experiences. I'm also passionate about open-source contributions and constantly work on personal projects to sharpen my skills.</p>
+    </section>
+
+    <section class="section fade-in">
+        <h3>My Projects</h3>
+        <p>Throughout my journey, I have worked on a variety of exciting projects. From building websites to developing mobile applications, I enjoy turning ideas into reality. Check out my portfolio for more details on the work I've done.</p>
+        <a href="#portfolio" class="button">See My Work</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ALIYAN LATIF. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll-to-Top Button
+        window.onscroll = function() {
+            let topButton = document.getElementById("topBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button id="topBtn" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #2575fc; color: white; padding: 10px 15px; border-radius: 50%; border: none; font-size: 16px;">↑</button>
+
+</body>
+</html>
